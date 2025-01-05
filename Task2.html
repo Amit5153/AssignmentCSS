@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://fastly.picsum.photos/id/524/200/300.jpg?hmac=_0B_jkz8dRd5eIQz0xIlicLaZZnzpRdAH72crtCVvOU" alt="Image 1">
+    <img src="https://fastly.picsum.photos/id/524/200/300.jpg?hmac=_0B_jkz8dRd5eIQz0xIlicLaZZnzpRdAH72crtCVvOU" alt="Image 2">
+    <img src="https://fastly.picsum.photos/id/524/200/300.jpg?hmac=_0B_jkz8dRd5eIQz0xIlicLaZZnzpRdAH72crtCVvOU" alt="Image 3">
+  </div>
+</body>
+</html>
 
